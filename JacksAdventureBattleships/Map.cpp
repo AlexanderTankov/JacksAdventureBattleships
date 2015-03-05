@@ -26,9 +26,9 @@ Map::Map(size_t Rows, size_t Columns)
 //Destructor
 Map::~Map()
 {
-	for (size_t i = 0; i < this->columns; i++)
+	for (size_t i = 0; i < this->rows; i++)
 	{
-		for (size_t j = 0; j < this->rows; j++)
+		for (size_t j = 0; j < this->columns; j++)
 		{
 			delete this->ppMap[i][j];
 		}
