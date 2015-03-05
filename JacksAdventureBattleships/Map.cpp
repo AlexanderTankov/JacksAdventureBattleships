@@ -58,11 +58,25 @@ std::vector<std::vector<Cell*>> Map::getPpMap() const
 //Print map
 void Map::printMap() const
 {
+	cout << "  |";
+	for (size_t i = 0; i < 10; i++)
+	{
+		cout << i << "|";
+	}
+	cout << endl << "-----------------------" << endl;
+
 	for (size_t i = 0; i < this->rows; i++)
 	{
 		for (size_t j = 0; j < this->columns; j++)
+		{
+			if (j == 0)
+			{
+				cout << i << "| ";
+			}
 			this->ppMap[i][j]->printCell();
-		cout << endl;
+			cout << "|";
+		}
+		cout << endl << "-----------------------" << endl;
 	}
 }
 

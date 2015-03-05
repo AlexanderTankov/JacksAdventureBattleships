@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	Map myNewMap(20, 10);
+	Map myNewMap(10, 10);
 
 	ShipCell cellsOfShip1(6, 5);
 	ShipCell cellsOfShip2(5, 5);
