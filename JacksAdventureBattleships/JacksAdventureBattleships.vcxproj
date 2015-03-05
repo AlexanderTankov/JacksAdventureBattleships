@@ -79,6 +79,7 @@
     <ClInclude Include="Boat.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Ship.h" />
+    <ClInclude Include="WaterCell.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cell.cpp" />

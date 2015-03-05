@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Cell.h"
 
 class Ship
 {
@@ -12,6 +13,6 @@ public:
 
 private:
 	std::size_t size;
+	Cell ** cellsOfShip;
 	bool is_alive;
-	char symbol;
 };

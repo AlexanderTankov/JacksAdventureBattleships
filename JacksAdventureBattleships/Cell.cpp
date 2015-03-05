@@ -51,6 +51,12 @@ char Cell::getSymbol() const
 	return this->symbol;
 }
 
+//Check that one cell is free
+bool Cell::getIsFree() const
+{
+	return this->isFree;
+}
+
 
 //Set row to cell
 void Cell::setRow(size_t Row)
@@ -68,6 +74,12 @@ void Cell::setColumn(size_t Column)
 void Cell::setSymbol(char Symbol)
 {
 		this->symbol = Symbol;
+}
+
+//Set value to isFree
+void Cell::setIsFree(bool NewIsFree)
+{
+	this->isFree = NewIsFree;
 }
 
 
