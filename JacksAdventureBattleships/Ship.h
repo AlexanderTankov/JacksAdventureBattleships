@@ -1,18 +1,23 @@
 #pragma once
 #include <iostream>
-#include "Cell.h"
+#include <vector>
+#include "ShipCell.h"
 
 class Ship
 {
 public:
-	virtual std::size_t getSize() const = 0;
-	virtual bool getIsAlive() const = 0;
+	Ship(std::vector<ShipCell> cellsOfShip, std::size_t Size);
+	virtual ~Ship();
 
-	virtual void setSize(std::size_t newSize) = 0;
-	virtual void setIsAlive(bool is_alive) = 0;
+	std::size_t getSize() const;
+	//za da trugne
+	virtual bool getIsAlive() const = 0;
+	std::vector<ShipCell> getCellsOfShip() const;
+
+	void setIsAlive(bool is_alive);
 
 private:
 	std::size_t size;
-	Cell ** cellsOfShip;
+	std::vector<ShipCell> cellsOfShip;
 	bool is_alive;
 };

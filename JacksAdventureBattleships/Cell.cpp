@@ -4,11 +4,11 @@
 using namespace std;
 
 //Constructor
-Cell::Cell()
+Cell::Cell(char Symbol)
 {
 	this->row = 0;
 	this->column = 0;
-	this->symbol = NULL;
+	this->symbol = Symbol;
 }
 
 //Destructor

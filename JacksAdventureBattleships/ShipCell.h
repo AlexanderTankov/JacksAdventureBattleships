@@ -4,7 +4,7 @@
 class ShipCell : public Cell
 {
 public:
-	ShipCell() : Cell() { this->isStricken = false; }
+	ShipCell() : Cell(char(219)) { this->isStricken = false; }
 	virtual ~ShipCell() {}
 	ShipCell(size_t Row, size_t Column) : Cell(Row, Column, char(219)) { this->isStricken = false; }
 	ShipCell(const ShipCell& other) : Cell(other) { this->isStricken = other.getIsStricken(); }

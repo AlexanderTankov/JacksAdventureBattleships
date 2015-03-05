@@ -4,7 +4,7 @@
 class Cell
 {
 public:
-	Cell();
+	Cell(char Symbol);
 	virtual ~Cell();
 	Cell(size_t Row, size_t Column, char Symbol);
 	Cell(const Cell& other);

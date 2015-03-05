@@ -4,7 +4,7 @@
 class WaterCell : public Cell
 {
 public:
-	WaterCell() : Cell() {}
+	WaterCell() : Cell(char(177)) {}
 	virtual ~WaterCell() {}
 	WaterCell(size_t Row, size_t Column) : Cell(Row, Column, char(177)) {}
 	WaterCell(const WaterCell& other) : Cell(other) {}
