@@ -27,6 +27,9 @@
     <ClInclude Include="WaterCell.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ShipCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
