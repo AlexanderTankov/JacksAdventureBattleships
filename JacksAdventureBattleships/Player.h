@@ -1,25 +1,21 @@
 #pragma once
-#include <vector>
-#include "Ship.h"
+
+#include <string>
 #include "Map.h"
 
 class Player
 {
 public:
-	Player();
+	Player(std::string newName);
 	~Player();
 
+	std::string getName() const;
+	Map& getMap();
 
+	void setName(std::string newName);
+	void setMap(Map& newMap);
 
 private:
-	std::vector<Ship*> ownShips;
+	std::string name;
 	Map ownMap;
 };
-
-Player::Player()
-{
-}
-
-Player::~Player()
-{
-}

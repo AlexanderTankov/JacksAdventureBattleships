@@ -3,6 +3,26 @@
 
 using namespace std;
 
+//Default Constructor
+Map::Map()
+{
+	this->rows = 10;
+	this->columns = 10;
+	this->ppMap.resize(this->rows);
+	for (size_t i = 0; i < this->rows; i++)
+	{
+		this->ppMap[i].resize(this->columns);
+	}
+
+	for (size_t i = 0; i < this->rows; i++)
+	{
+		for (size_t j = 0; j < this->columns; j++)
+		{
+			this->ppMap[i][j] = new WaterCell;
+		}
+	}
+}
+
 //Constructor
 Map::Map(size_t Rows, size_t Columns)
 {

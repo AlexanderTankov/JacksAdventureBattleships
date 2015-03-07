@@ -5,6 +5,7 @@
 class Map
 {
 public:
+	Map();
 	Map(size_t Rows, size_t Columns);
 	~Map();
 
