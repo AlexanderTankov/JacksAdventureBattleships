@@ -9,5 +9,5 @@ public:
 	WaterCell(size_t Row, size_t Column) : Cell(Row, Column, char(178)) {}
 	WaterCell(const WaterCell& other) : Cell(other) {}
 
-	virtual	WaterCell* Clone() const { return new WaterCell(*this); }
+	virtual	Cell* Clone() const { return new WaterCell(*this); }
 };

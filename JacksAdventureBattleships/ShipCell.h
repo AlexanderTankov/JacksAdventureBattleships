@@ -9,7 +9,7 @@ public:
 	ShipCell(size_t Row, size_t Column) : Cell(Row, Column, 'b') { this->isStricken = false; }
 	ShipCell(const ShipCell& other) : Cell(other) { this->isStricken = other.getIsStricken(); }
 
-	virtual	ShipCell* Clone() const { return new ShipCell(*this); }
+	virtual	Cell* Clone() const { return new ShipCell(*this); }
 
 	bool getIsStricken() const { return this->isStricken; }
 	void setIsStricken(bool newIsStricken) { this->isStricken = newIsStricken; }
